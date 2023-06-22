@@ -44,7 +44,7 @@ export default function App() {
     <>
       <TodoForm addTodo={addTodo} />
       <div className="flex flex-col pt-8">
-        <label htmlFor="todo-items" className="text-3xl text-blue-700 dark:text-blue-500">Todo List</label>
+        <h3 className="text-3xl text-blue-700 dark:text-blue-500">Todo List</h3>
         <TodoList todoList={todoList} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
       </div>
     </>

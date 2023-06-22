@@ -7,7 +7,7 @@ export function TodoList({ todoList, toggleTodo, deleteTodo }:
     <ul className="flex flex-col mt-2" id="todo-items">
       {todoList.map((todo) => {
         return (
-          <Todo todo={todo} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+          <Todo todo={todo} toggleTodo={toggleTodo} deleteTodo={deleteTodo} key={todo.id} />
         )
       })}
     </ul>

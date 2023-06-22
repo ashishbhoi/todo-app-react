@@ -3,7 +3,7 @@ import { Todo } from './App';
 export function Todo({ todo, toggleTodo, deleteTodo }:
   { todo: Todo, toggleTodo: (id: string, checked: boolean) => void, deleteTodo: (id: string) => void }) {
   return (
-    <li className="flex flex-row items-center py-2 px-2" key={todo.id}>
+    <li className="flex flex-row items-center py-2 px-2">
       <input type="checkbox" id={todo.id} className="mr-2 w-4 h-4" checked={todo.checked} onChange={(e) => toggleTodo(todo.id, e.target.checked)} />
       <label htmlFor={todo.id} className={todo.checked ?
         "text-lg text-gray-800 dark:text-gray-400 line-through" :
